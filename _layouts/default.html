@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <title> {{ page.title }} - LSM </title>
+  <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  {% include header.html %}
+
+  <div class="fr w-75 mt2">
+    {{ content }}
+  </div>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="fl w-75 ma3 ml5">
+  <div class="fl w-70">
+    <div class="ttc f6"> {{page.issue}} - {{page.date | date: "%b %Y"}} </div>
+    <div class="f2 black"> {{page.title}} </div>
+    <div class="f4"> {{page.author}} </div>
+
+    <div class="fl lh-copy post">
+      {{ content }}
+      <div class="f7 mv5 bt">
+        <p>{{page.footer}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fr black pa4 f3 fixed right-0">
+  <a class="link black" href="javascript:history.back()"> ⟵ </a>
+</div>

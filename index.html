@@ -1,0 +1,18 @@
+---
+layout: default
+title: Lingkar Seniman Menulis
+---
+{% for issue in site.issue reversed %}
+<article class="fl w-70 ma3 ml5">
+  <a class="fl w-100 link" href="{{issue.url | relative_url}}">
+    <div class="w-50 fl pr2">
+      <div class="f2 black"> {{issue.title | split: " - " | first}} </div>
+      <div class="f2 black"> {{issue.title | split: " - " | last}} </div>
+      <div class="ttc f4 black mt2"> {{issue.tanggal}} </div>
+    </div>
+    <article class="w-50 center pb4 fl">
+      <img src="{{issue.cover}}" alt="{{issue.title}}">
+    </article>
+  </a>
+</article>
+{% endfor %}

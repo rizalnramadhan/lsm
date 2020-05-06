@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article class="fl w-70 ma3 ml5 mb5">
+  <div class="fl w-70">
+    <div class="f2 black"> {{page.title | split: " - " | first}} </div>
+    <div class="f2 black"> {{page.title | split: " - " | last}} </div>
+    <div class="f4 black mt2"> {{page.tanggal}} </div>
+    <article class="w-100 center pv2 mt2">
+      <img src="{{ page.cover }}" alt="{{page.title}}">
+    </article>
+
+    <div class="fl lh-copy">
+      {{content}}
+    </div>
+
+    <div class="lh-title fl ttc pt2">
+      {% for post in site.categories[page.tag] %}
+        <a class="link black" href="{{ post.url }}">
+          <div class="f4"> {{ post.title }} </div>
+          <div class="mb2 f6"> {{post.author}} </div>
+        </a>
+      {% endfor %}
+      <a class="link black" target="_blank" href="/assets/pdf/lsm-{{page.tag}}.pdf">
+        <div class="fl f4 hover-bg-moon-gray mv4 ba pa2 br1"> Download PDF </div>
+      </a>
+    </div>
+  </div>
+</article>
+
+<div class="fr black pa4 f3 fixed right-0">
+  <a class="link black" href="javascript:history.back()"> ⟵ </a>
+</div>
