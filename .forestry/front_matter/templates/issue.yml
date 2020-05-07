@@ -14,5 +14,3 @@ fields:
 - type: file
   name: cover
   label: cover
-pages:
-- _issue/burung-papa-tidak-sakit.md
