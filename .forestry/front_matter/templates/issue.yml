@@ -24,3 +24,5 @@ fields:
       format: markdown
   label: Editorial
   description: Isilah bro.
+pages:
+- _issue/burung-papa-tidak-sakit.md
