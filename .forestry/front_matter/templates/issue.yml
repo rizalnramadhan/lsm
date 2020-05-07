@@ -1,0 +1,16 @@
+---
+label: issue
+hide_body: false
+fields:
+- type: text
+  name: tag
+  label: tag
+- type: text
+  name: title
+  label: title
+- type: text
+  name: tanggal
+  label: tanggal
+- type: file
+  name: cover
+  label: cover
