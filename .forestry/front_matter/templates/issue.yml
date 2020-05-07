@@ -14,3 +14,13 @@ fields:
 - type: file
   name: cover
   label: cover
+- name: editorial
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Editorial
+  description: Isilah bro.
