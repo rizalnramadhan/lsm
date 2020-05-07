@@ -9,3 +9,4 @@ editorial: Slayer was an American thrash metal band from Huntington Park, Califo
 published: false
 
 ---
+Band trash metal legendaris **_Slayer_** mengumumkan bakal menggelar tur dunia dalam rangka perpisahan dan pensiun.
